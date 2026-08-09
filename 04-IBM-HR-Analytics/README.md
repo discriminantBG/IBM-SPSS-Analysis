@@ -687,52 +687,14 @@ Add job hierarchy variables and use robust inference. The present model has stro
 ```text
 IBM-HR-Analytics-SPSS/
 ├── README.md
-├── data/
-│   └── IBM_HR_Analytics.sav
+├── input/
+│   └── ibm_hr.sav
+│   └── WA_Fn-UseC_-HR-Employee-Attrition.csv
 ├── output/
-│   └── HR_Analytics_SPSS_Output.spv
-├── syntax/
-│   └── Syntax_Commands.sps
-└── images/
-    ├── income_histogram.png
-    ├── income_qq_plot.png
-    ├── income_boxplot.png
-    ├── department_means_plot.png
-    ├── regression_residual_histogram.png
-    ├── regression_pp_plot.png
-    └── regression_zresid_zpred.png
+    └── ibm_hr.spv
+
+
 ```
-
-Suggested organization separates the working dataset, executable syntax, full SPSS output, and exported figures used in the documentation.
-
----
-
-# Reproducibility
-
-To reproduce the project:
-
-1. Open `IBM_HR_Analytics.sav` in IBM SPSS Statistics.
-2. Open `Syntax_Commands.sps`.
-3. Confirm that variable names match the names used in the syntax.
-4. Run the syntax sequentially from Phase 1 through Phase 5.
-5. Compare the resulting tables and figures with `HR_Analytics_SPSS_Output.spv`.
-
-SPSS syntax should be retained even when the menus are used. Syntax provides a transparent and repeatable record of the exact procedures and options selected.
-
----
-
-# Important Limitations
-
-- The dataset is observational; the analyses identify associations and predictions, not causal effects.
-- The sample represents one dataset and may not reflect every real organization or labor market.
-- The gender t-test is unadjusted and cannot independently establish full compensation equity.
-- Statistical significance is affected by the large sample size; effect sizes must also be considered.
-- The regression residual plot indicates possible heteroscedasticity, nonlinearity, and omitted salary-band variables.
-- `JobLevel` and `JobRole` are likely major structural salary determinants and are not included in the final three-predictor model.
-- The model explains variance in **log monthly income**, not directly the same percentage of variance in raw dollar income.
-- Retransforming log predictions to the original salary scale may require a bias correction if accurate individual salary forecasts are needed.
-
----
 
 # Portfolio Skills Demonstrated
 
