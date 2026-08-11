@@ -6,7 +6,7 @@ Welcome to my comprehensive data analysis portfolio built using **IBM SPSS Stati
 
 ## 📂 Repository Structure & Project Overview
 
-The repository is organized into four distinct analytical projects, each structured with its own datasets (`.sav`/`.csv`), SPSS outputs (`.spv`), syntax scripts (`.sps`), and standalone documentations (`README.md`):
+The repository is organized into five distinct analytical projects, each structured with its own datasets (`.sav`/`.csv`), SPSS outputs (`.spv`), syntax scripts (`.sps`), and standalone documentations (`README.md`):
 
 ### 📁 [01-Retail-Customer-Analysis](./01-Retail-Customer-Analysis)
 * **Domain:** Retail & Customer Analytics
@@ -28,6 +28,11 @@ The repository is organized into four distinct analytical projects, each structu
 * **Focus:** Evaluation of salary distribution, gender pay equity, academic departmental alignment, and predictive compensation modeling.
 * **Key Methodology:** Normality testing (Kolmogorov-Smirnov / Shapiro-Wilk), Independent Samples $t$-test (Cohen's $d$), Chi-Square Test of Independence (Cramér's $V$), One-Way ANOVA (Welch & Games-Howell Post-Hoc), and Multiple Linear Regression ($\ln(Y)$ transformation, VIF, Durbin-Watson, Cook's Distance).
 
+### 📁 [05-Telco-Customer-Churn](./05-Telco-Customer-Churn)
+* **Domain:** Telecommunications & Customer Retention Analytics
+* **Focus:** Customer churn prediction, revenue generation drivers, and the impact of contract types and internet service quality.
+* **Key Methodology:** Independent Samples $t$-test (Welch), Chi-Square test, One-Way ANOVA, Two-Way ANOVA (GLM Univariate, Estimated Marginal Means), Multiple Linear Regression (Interaction terms), and Binary Logistic Regression (Odds Ratios, Hosmer-Lemeshow).
+
 ---
 
 ## 📊 Core Statistical Competencies Covered
@@ -38,8 +43,8 @@ The repository is organized into four distinct analytical projects, each structu
 | **Normality Diagnostics** | Shapiro-Wilk, Kolmogorov-Smirnov with Lilliefors correction. |
 | **Two-Group Comparisons** | Independent Samples $t$-test, Paired $t$-test, Levene’s Test for Equality of Variances. |
 | **Categorical Analysis** | Chi-Square ($\chi^2$) Test of Independence, Crosstabulations, Cramér's $V$, Phi ($\phi$). |
-| **Multi-Group Analysis (ANOVA)** | One-Way ANOVA, Welch Robust Test, Post-Hoc comparisons (Tukey HSD, Games-Howell), Eta-squared ($\eta^2$). |
-| **Predictive Modeling** | Simple & Multiple Linear Regression, Residual Analysis ($ZRESID$ vs $ZPRED$), Collinearity Diagnostics (VIF/Tolerance), Logarithmic Transformations ($\ln(Y)$). |
+| **Multi-Group Analysis (ANOVA)** | One-Way ANOVA, Two-Way ANOVA (GLM Univariate), Welch Robust Test, Post-Hoc comparisons (Tukey HSD, Games-Howell), Eta-squared ($\eta^2$). |
+| **Predictive Modeling** | Simple & Multiple Linear Regression, Binary Logistic Regression, Interaction Terms, Residual Analysis ($ZRESID$ vs $ZPRED$), Collinearity Diagnostics (VIF/Tolerance), Logarithmic Transformations ($\ln(Y)$). |
 
 ---
 
